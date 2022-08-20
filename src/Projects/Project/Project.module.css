@@ -1,0 +1,23 @@
+.projectBlock {
+    width: 250px;
+    background-color: #dbccf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.projectImage {
+    width: 100%;
+    border: 1px solid;
+}
+
+.projectName {
+    background-color: antiquewhite;
+
+}
+
+.projectDescription {
+    background-color: antiquewhite;
+
+}

@@ -1,0 +1,24 @@
+.projectsBlock {
+    height: 100vh;
+    background-color: #bb8ef5;
+}
+
+.projectsContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+}
+
+.title {
+    background-color: #dcf5e4;
+}
+
+.projects {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
