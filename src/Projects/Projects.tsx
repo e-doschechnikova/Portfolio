@@ -12,6 +12,7 @@ export const Projects = () => {
                 <div className={style.projects}>
                     <Project/>
                     <Project/>
+                    <Project/>
                 </div>
             </div>
 
