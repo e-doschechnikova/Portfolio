@@ -1,0 +1,25 @@
+.workBlock {
+    height: 25vh;
+    background-color: #dfe593;
+}
+
+.workContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.work {
+    width: 500px;
+
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.link {
+    font-size: 30px;
+    width: 150px;
+    background-color: coral;
+}
