@@ -6,8 +6,7 @@ display: flex;
 }
 
 .contactsContainer {
-    display: block;
-
+    background-color: #b1e5c2;
  border: 1px solid black;
 }
 
