@@ -1,13 +1,34 @@
-import React from 'react';
+import React from "react";
 import style from "./Footer.module.css";
-import {Title} from "../Components/Title/Title";
+import github from "../img/github.png"
+import linkedin from "../img/linkedin.png"
+import telegram from "../img/telegram.png"
+import styleContainer from "../Common/Styles/Container.module.css";
 
 export const Footer = () => {
     return (
         <div className={style.footerBlock}>
-            <div className={style.footerContainer}>
-                <Title title={"Evgeniia Doschechnikova"}/>
-                <div className={style.footerSocial}>
+            <div className={styleContainer.container}>
+                <div className={style.footerContainer}>
+                    <div>
+                        <p>
+                            <span>Evgeniia Doschechnikova</span>
+                        </p>
+                        <div className={style.footerSocial}>
+                            <a href={"https://github.com/e-doschechnikova"}>
+                                <img src={github} alt={"github"}/>
+                            </a>
+                            <a href={"https://www.linkedin.com/in/e-doschechnikova"}>
+                                <img src={linkedin} alt={"linkedin"}/>
+                            </a>
+                            <a href={"https://www.linkedin.com/in/e-doschechnikova"}>
+                                <img src={telegram} alt={"telegram"}/>
+                            </a>
+                        </div>
+                        <span>© 2022 All rights reserved</span>
+                    </div>
+
+
                 </div>
             </div>
         </div>

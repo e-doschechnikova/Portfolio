@@ -1,16 +1,24 @@
 .footerBlock {
-    height: 20vh;
+    height: 15vh;
     background-color: palevioletred;
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 .footerContainer {
+    display: flex;
+    flex-direction: column;
     background-color: #b1e5c2;
     border: 1px solid black;
 }
 
 .footerSocial {
+    display: flex;
+    justify-content: center;
     border: 1px solid black;
     background-color: #94b39e;
+}
+
+.footerSocial img {
+    width: 50px;
+    height: 50px;
 }
