@@ -1,13 +1,13 @@
 .contactsBlock {
     height: 100vh;
     background-color: lavender;
-display: flex;
+    display: flex;
     flex-direction: column;
 }
 
 .contactsContainer {
     background-color: #b1e5c2;
- border: 1px solid black;
+    border: 1px solid black;
 }
 
 .contactsForm {
@@ -21,3 +21,7 @@ display: flex;
 .sendBtn {
     background-color: #edd5eb;
 }
+
+/*@media (max-width: 480px) {*/
+
+/*}*/
