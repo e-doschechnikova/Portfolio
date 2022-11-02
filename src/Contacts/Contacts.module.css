@@ -35,16 +35,11 @@
     margin: 10px 0;
     padding: 15px;
     background-color: #edd5eb;
+    cursor: pointer;
 }
 
 input {
     margin: 10px 0;
-}
-
-@media (max-width: 360px) {
-    .contactsForm {
-        width: 100%;
-    }
 }
 
 @media (max-width: 480px) {
@@ -52,15 +47,3 @@ input {
         width: 100%;
     }
 }
-
-/*@media (max-width: 767px) {*/
-/*    .contactsForm {*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 768px) and (max-width: 991px) {*/
-/*    .contactsForm {*/
-/*        width: 400px;*/
-/*    }*/
-/*}*/
