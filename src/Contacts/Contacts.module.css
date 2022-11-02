@@ -1,3 +1,14 @@
+.container {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .contactsBlock {
     height: 100vh;
     background-color: lavender;
@@ -6,6 +17,9 @@
 }
 
 .contactsContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #b1e5c2;
     border: 1px solid black;
 }
@@ -14,14 +28,39 @@
     width: 500px;
     display: flex;
     flex-direction: column;
-    border: 1px solid yellow;
-    background-color: cadetblue;
+    text-align: center;
 }
 
 .sendBtn {
+    margin: 10px 0;
+    padding: 15px;
     background-color: #edd5eb;
 }
 
-/*@media (max-width: 480px) {*/
+input {
+    margin: 10px 0;
+}
 
+@media (max-width: 360px) {
+    .contactsForm {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactsForm {
+        width: 100%;
+    }
+}
+
+/*@media (max-width: 767px) {*/
+/*    .contactsForm {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 768px) and (max-width: 991px) {*/
+/*    .contactsForm {*/
+/*        width: 400px;*/
+/*    }*/
 /*}*/

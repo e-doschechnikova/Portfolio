@@ -1,23 +1,38 @@
-.project{
+.project {
     width: 250px;
     background-color: #dbccf0;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
-.projectImage {
+.projectImageContainer {
     width: 100%;
+    height: 200px;
     border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://pic.rutubelist.ru/video/7b/f7/7bf7b1a704c04bee291601df48c4603a.jpg?size=w306r");
+    background-size: cover;
+    background-position: center;
+}
+
+.projectMore {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #a8c8f7;
+    padding: 5px;
 }
 
 .projectName {
     background-color: antiquewhite;
-
 }
 
 .projectDescription {
     background-color: antiquewhite;
-
 }
+
