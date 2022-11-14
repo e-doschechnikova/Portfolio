@@ -8,7 +8,6 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
-
 }
 
 .projects {
@@ -17,4 +16,5 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 30px;
 }

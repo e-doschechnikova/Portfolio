@@ -17,10 +17,9 @@ export const Project: FC<ProjectType> = ({title, description}) => {
                     <a href={"#"} className={style.projectMore}>see
                         more</a>
                 </div>
-                <div className={style.descriptionBlock}>
-                    <h4 className={style.projectTitle}>{title}</h4>
-                    <h4 className={style.projectDescription}>{description}</h4>
-                </div>
+                <h3 className={style.projectTitle}>{title}</h3>
+                <div className={style.line}></div>
+                <span className={style.projectDescription}>{description}</span>
             </div>
         </div>
     );

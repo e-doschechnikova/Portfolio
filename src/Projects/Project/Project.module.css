@@ -1,6 +1,6 @@
 .project {
     width: 250px;
-    background-color: #CCCCFF;
+    background-color: rgba(192, 127, 80, 0.8);;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,10 +33,34 @@
 }
 
 .projectTitle {
-    background-color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(192, 127, 80, 0.8);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 650;
+    line-height: 26px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+}
+
+.line {
+    height: 1px;
+    width: 60px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .projectDescription {
-    background-color: antiquewhite;
+    font-family: 'Jost', sans-serif;
+    background-color: rgba(192, 127, 80, 0.8);
+    font-size: 16px;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: #717178;
+    margin: 0 0 15px;
 }
 

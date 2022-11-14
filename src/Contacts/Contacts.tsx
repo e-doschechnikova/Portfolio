@@ -7,7 +7,8 @@ export const Contacts = () => {
         <div className={style.contactsBlock}>
             <div className={style.container}>
                 <div className={style.contactsContainer}>
-                    <Title title={"Contacts"}/>
+                    <h2>Contacts</h2>
+                    {/*<Title title={""}/>*/}
                     <form className={style.contactsForm}>
                         <input type="text" placeholder={'Name'}/>
                         <input type="text" placeholder={'E-mail'}/>
