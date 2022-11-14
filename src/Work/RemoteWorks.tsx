@@ -8,7 +8,8 @@ export const RemoteWorks = () => {
         <div className={style.workBlock}>
             <div className={`${styleContainer.container} ${style.workContainer}`}>
                 <div className={style.work}>
-                    <Title title={"Open and ready for cooperation!"}/>
+                    <h2>Open and ready for cooperation!</h2>
+                    {/*<Title title={""}/>*/}
                     <a className={style.link} href="#">Hire me!</a>
                 </div>
             </div>

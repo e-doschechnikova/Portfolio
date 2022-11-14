@@ -1,5 +1,6 @@
 .projectsBlock {
-    background-color: #bb8ef5;
+    background-color: #f8f9fa;
+    padding: 100px 0;
 }
 
 .projectsContainer {
@@ -8,10 +9,6 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
 
-}
-
-.title {
-    background-color: #dcf5e4;
 }
 
 .projects {
