@@ -1,0 +1,137 @@
+@import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
+
+.mainBlock {
+  background-color: $bgColorMain;
+
+  .about {
+    padding: 90px 0;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+
+    .container {
+      padding-right: 60px;
+      padding-left: 60px;
+
+      .row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .text {
+          width: 300px;
+          background-color: #f2f0f2;
+
+          .subheadingTitle {
+            display: block;
+            color: $thirdColor;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5em;
+            margin-bottom: 5px;
+            padding-left: 50px;
+            position: relative;
+
+            &::after {
+              content: '';
+              width: 40px;
+              height: 1px;
+              background: $secondaryColor;
+              position: absolute;
+              left: 0;
+              bottom: 45%;
+            }
+          }
+
+          .headingTitle {
+            color: $textColor;
+            font-family: $textFontFamily;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.25em;
+          }
+
+          p {
+            font-family: $textFontFamily;
+            font-size: 16px;
+            line-height: 1.75em;
+            font-weight: 400;
+            color: $thirdColor;
+            margin: 0 0 15px;
+          }
+
+          .aboutInfo {
+            width: 100%;
+            height: auto;
+            clear: both;
+            float: left;
+            margin-bottom: 30px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            .row {
+              display: flex;
+              align-items: center;
+              margin-right: -15px;
+              margin-left: -15px;
+
+              .info {
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                p {
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+
+        .aboutImg {
+          padding: 0 0 30px 15px;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 90px;
+            left: 200px;
+            right: -170px;
+            bottom: 50px;
+            border: 10px solid #f8f2ed;
+          }
+
+          &::after {
+            content: '';
+            width: 90%;
+            position: absolute;
+            top: 20px;
+            left: 200px;
+            right: -170px;
+            bottom: 50px;
+            background-image: url("../Assets/Image/dots.png");
+            background-repeat: repeat;
+            z-index: -0;
+          }
+        }
+
+        img {
+
+          padding: 60px 30px 50px;
+          width: 450px;
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+
+  }
+
+
+}
+

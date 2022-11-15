@@ -1,7 +1,7 @@
 @import "src/Common/Styles/Sass/variables";
 
 .skillsBlock {
-  background-color: $bgColorThird;
+  background-color: $fourthColor;
   padding: 100px 0;
 
   .skillsContainer {
@@ -10,7 +10,7 @@
     justify-content: flex-start;
 
     .projectTitle {
-      background-color: $bgColorThird;
+      background-color: $fourthColor;
     }
 
     .skills {
