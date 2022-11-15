@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./Footer.module.css";
-import github from "../img/github.png"
-import linkedin from "../img/linkedin.png"
-import telegram from "../img/telegram.png"
+import github from "../Assets/Image/github.png"
+import linkedin from "../Assets/Image/linkedin.png"
+import telegram from "../Assets/Image/telegram.png"
 import styleContainer from "../Common/Styles/Container.module.css";
 
 export const Footer = () => {

@@ -11,10 +11,10 @@
 }
 
 .projects {
-    border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 30px;
+    align-items: flex-start;
 }
