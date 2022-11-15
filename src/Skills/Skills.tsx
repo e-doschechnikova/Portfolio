@@ -13,7 +13,6 @@ export const Skills = () => {
                     <Skill title={"CSS"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>
                     <Skill title={"JS/TS"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>
                     <Skill title={"React"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit."}/>
-
                 </div>
             </div>
         </div>

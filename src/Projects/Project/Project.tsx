@@ -1,11 +1,9 @@
 import React, {FC} from "react";
-import style from "./Project.module.css"
+import style from "./Project.module.scss"
 
 
 type ProjectType = {
     styles: { backgroundImage: string }
-    // code: string
-    // demo: string
     title: string
     description: string
 }
