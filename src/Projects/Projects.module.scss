@@ -1,7 +1,7 @@
 @import "src/Common/Styles/Sass/variables";
 
 .projectsBlock {
-  background-color: $bgColor;
+  background-color: $bgColorMain;
   padding: 100px 0;
 
   .projectsContainer {
@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
-
 
     .projects {
       width: 100%;

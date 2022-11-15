@@ -21,9 +21,6 @@ export const Projects = () => {
                     <Project title={"SOCIAL NETWORK"} description={"PROJECT DESCRIPTION"} styles={social}/>
                     <Project title={"TODO LIST"} description={"PROJECT DESCRIPTION"} styles={todolist}/>
                     <Project title={"PROJECT NAME"} description={"PROJECT DESCRIPTION"} styles={social}/>
-                    <Project title={"SOCIAL NETWORK"} description={"PROJECT DESCRIPTION"} styles={social}/>
-                    <Project title={"TODO LIST"} description={"PROJECT DESCRIPTION"} styles={todolist}/>
-                    <Project title={"PROJECT NAME"} description={"PROJECT DESCRIPTION"} styles={social}/>
                 </div>
             </div>
 

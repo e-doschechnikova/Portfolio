@@ -2,13 +2,11 @@
 @import "src/Common/Styles/Sass/mixins";
 
 .skill {
-  padding: 50px 10px 60px;
-  background-color: $bgColor;
+  padding: 10px;
+  background-color: $bgColorMain;
   width: 240px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   margin-bottom: 30px;
   position: relative;
 
@@ -20,16 +18,20 @@
     color: $textColor;
   }
 
-  .icon {
-    height: 60px;
-    width: 60px;
-    background-color: $primaryColor;
+  .iconContainer {
+    text-align: left;
+
+    .icon {
+      font-size: 35px;
+      color: $secondaryColor;
+      margin-bottom: 5px;
+    }
   }
 
   .description {
     @include text($textFontFamily, 16px, 1.75em, 400);
     background-color: $bgColorSecond;
-    color: $textColorDescription;
+    color: $thirdColor;
     margin: 0 0 15px;
   }
 }

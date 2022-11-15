@@ -3,6 +3,7 @@ import style from "./Skills.module.scss"
 import styleContainer from "../Common/Styles/Container.module.css"
 import {Skill} from "./Skill/Skill";
 import {Title} from "../Components/Title/Title";
+import {faLaptopCode, faPalette, faTasks, faUsers} from "@fortawesome/free-solid-svg-icons";
 
 export const Skills = () => {
     return (
@@ -10,12 +11,13 @@ export const Skills = () => {
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={"Skills"}/>
                 <div className={style.skills}>
-                    <Skill title={"Programming languages"} description={"JavaScript, TypeScript"}/>
-                    <Skill title={"DEVELOPMENT"} description={"React, Redux, SCSS & CSS, Git"}/>
-                    <Skill title={"TESTING"} description={"Unit Tests, SnapShot, Storybook"}/>
-                    <Skill title={"DESIGN"} description={"Material UI, Adobe, Photoshop,"}/>
+                    <Skill title={"DEVELOPMENT"} description={"JavaScript, TypeScript, React, Redux, SCSS & CSS, Git"}
+                           titleIcon={faLaptopCode}/>
+                    <Skill title={"TESTING"} description={"Unit Tests, SnapShot, Storybook"} titleIcon={faTasks}/>
+                    <Skill title={"DESIGN"} description={"Material UI, Adobe, Photoshop,"} titleIcon={faPalette}/>
                     <Skill title={"SOCIAL"}
-                           description={"Well-coordinated teamwork, with a sense of humor, small talk, easy and quick to learn"}/>
+                           description={"Well-coordinated teamwork, with a sense of humor, small talk, easy and quick to learn"}
+                           titleIcon={faUsers}/>
                 </div>
             </div>
         </div>
