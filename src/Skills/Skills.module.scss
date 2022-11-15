@@ -1,27 +1,29 @@
 @import "src/Common/Styles/Sass/variables";
 
-.projectsBlock {
-  background-color: $bgColor;
+.skillsBlock {
+  background-color: $bgColorThird;
   padding: 100px 0;
 
-  .projectsContainer {
+  .skillsContainer {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    flex-wrap: nowrap;
 
-
-    .projects {
+    .skills {
+      border: 1px solid;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
-      margin-top: 30px;
-      align-items: flex-start;
+      box-sizing: border-box;
+      padding: 20px;
+      @media (max-width: 480px) {
+        .skillsBlock {
+          min-height: 0;
+        }
+      }
     }
   }
+
+
 }
-
-
-
-

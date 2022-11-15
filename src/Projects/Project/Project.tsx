@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import style from "./Project.module.scss"
+import {Line} from "../../Components/Line/Line";
 
 
 type ProjectType = {
@@ -16,7 +17,7 @@ export const Project: FC<ProjectType> = ({styles, title, description}) => {
             </div>
             <div className={style.projectInfo}>
                 <h3 className={style.projectTitle}>{title}</h3>
-                <div className={style.line}></div>
+                <Line/>
                 <span className={style.projectDescription}>{description}</span>
             </div>
         </div>

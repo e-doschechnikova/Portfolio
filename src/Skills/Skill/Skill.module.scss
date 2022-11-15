@@ -1,0 +1,37 @@
+@import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
+
+.skill {
+  padding: 50px 10px 60px;
+  background-color: $bgColor;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+
+  .projectTitle {
+    @include text($titleFontFamily, 21px, 26px, 650);
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: $textColor;
+  }
+
+  .icon {
+    height: 60px;
+    width: 60px;
+    background-color: $primaryColor;
+  }
+
+  .description {
+    @include text($textFontFamily, 16px, 1.75em, 400);
+    background-color: $bgColorSecond;
+    color: $textColorDescription;
+    margin: 0 0 15px;
+  }
+}
+
+
