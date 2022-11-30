@@ -1,0 +1,57 @@
+@import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
+
+
+.workBlock {
+  background-color: $fourthColor;
+
+  .workContainer {
+    display: flex;
+    justify-content: center;
+
+    .work {
+      @include text($titleFontFamily, 36px, 40px, 650);
+      letter-spacing: .4px;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      padding: 20px;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .link {
+        @include text($titleFontFamily, 40px, 1.42857, 600);
+        text-decoration: none;
+        border: 1px solid $primaryColor;
+        color: $bgColorSecond;
+        outline: 0;
+        text-transform: uppercase;
+        padding: 40px 70px;
+        cursor: pointer;
+        letter-spacing: normal;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 0 4px 2px rgba(192, 127, 80, 0.8);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .work {
+        font-size: 20px;
+        line-height: 23px;
+
+        .link {
+          font-size: 20px;
+          padding: 20px 40px;
+        }
+
+      }
+    }
+
+
+  }
+}
+
+

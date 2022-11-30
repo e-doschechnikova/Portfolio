@@ -1,7 +1,6 @@
 import React from "react";
-import style from "./RemoteWorks.module.css"
+import style from "./RemoteWorks.module.scss"
 import styleContainer from "../Common/Styles/Container.module.css"
-import {Title} from "../Components/Title/Title";
 
 export const RemoteWorks = () => {
     return (
@@ -9,7 +8,6 @@ export const RemoteWorks = () => {
             <div className={`${styleContainer.container} ${style.workContainer}`}>
                 <div className={style.work}>
                     <h2>Open and ready for cooperation!</h2>
-                    {/*<Title title={""}/>*/}
                     <a className={style.link} href="#">Hire me!</a>
                 </div>
             </div>
