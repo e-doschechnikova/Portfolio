@@ -1,0 +1,44 @@
+@import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
+
+.infoContainer {
+
+  margin-bottom: 20px;
+  flex-direction: row;
+  width: 240px;
+  text-align: left;
+
+  h4 {
+
+    color: black;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  a, span {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    color: $thirdColor
+  }
+
+  .icon {
+    border: 1px solid #a8a8a8;
+    border-radius: 50%;
+    font-size: 24px;
+    height: 47px;
+    line-height: 47px;
+    margin-right: 12px;
+    text-align: center;
+    width: 47px;
+    color: #919191;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
