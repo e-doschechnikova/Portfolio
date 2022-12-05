@@ -1,0 +1,12 @@
+@import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
+
+.header {
+    height: 80px;
+    background-color: $fourthColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}

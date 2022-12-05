@@ -11,6 +11,7 @@
     p {
       font-size: 25px;
       text-align: center;
+
     }
 
     .footerSocial {
@@ -19,11 +20,15 @@
       align-items: center;
 
       span {
-        color: $secondaryColor;
+        @include text($titleFontFamily, 14px, 40px, 650);
+        letter-spacing: .4px;
+        text-decoration: none;
+        padding: 0 5px;
+        text-transform: uppercase;
+        color: $bgColorSecond;
       }
 
       img {
-        color: $secondaryColor;
         width: 30px;
         height: 30px;
       }

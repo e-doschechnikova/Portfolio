@@ -1,0 +1,19 @@
+@import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
+
+.nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    @include text($titleFontFamily, 14px, 40px, 650);
+    color: $bgColorSecond;
+    letter-spacing: .4px;
+    text-decoration: none;
+    padding: 0 5px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+  }
+}
