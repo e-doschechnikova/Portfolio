@@ -1,0 +1,41 @@
+@import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
+
+.footerBlock {
+  background-color: $fourthColor;
+  display: block;
+
+  .footerContainer {
+    display: block;
+
+    p {
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .footerSocial {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      span {
+        color: $secondaryColor;
+      }
+
+      img {
+        color: $secondaryColor;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .bottomText {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}
+
+
+
