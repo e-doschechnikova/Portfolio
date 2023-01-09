@@ -6,15 +6,14 @@
   padding: 100px 20px;
 
   .container {
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     width: 80%;
     margin: 0 auto;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    border: 1px solid;
+    //border: 1px solid;
   }
 
   .contactsContainer {
@@ -23,13 +22,14 @@
 
     .headingTitle {
 
-      @include text($textFontFamily, 16px, 1.5em, 400);
+      @include text($textFontFamily, 16px, 1.5em, 600);
       display: block;
       color: $thirdColor;
       margin-left: 15px;
       margin-bottom: 5px;
       padding-left: 50px;
       position: relative;
+      text-transform: uppercase;
 
       &::after {
         content: '';
@@ -49,6 +49,7 @@
       font-weight: 700;
       font-size: 36px;
       line-height: 1.25em;
+      text-transform: uppercase;
 
     }
   }
