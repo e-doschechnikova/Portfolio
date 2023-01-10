@@ -7,7 +7,8 @@
 
   .container {
     @include container();
-    @include flex(space-between, center, row, wrap);
+    @include flex(space-around, center, row, wrap);
+
     .aboutMe {
       width: 500px;
       text-align: left;
@@ -37,25 +38,33 @@
         @include text($titleFontFamily, 36px, 1.25em, 600);
         margin-bottom: 30px;
         text-transform: uppercase;
+        @media (max-width: 460px) {
+          text-align: center;
+          font-size: 25px;
+        }
       }
 
       p {
         @include text($textFontFamily, 16px, 1.75em, 400);
         color: $thirdColor;
         margin: 0 0 15px;
-
+        @media (max-width: 460px) {
+          text-align: center;
+          font-size: 15px;
+        }
       }
     }
 
     .photo {
-      display: flex;
-      flex-direction: column;
       width: 500px;
 
       img {
         height: auto;
         width: 100%;
         max-width: 720px;
+        //@media (max-width: 460px) {
+        //  width: 90%;
+        //}
       }
     }
   }

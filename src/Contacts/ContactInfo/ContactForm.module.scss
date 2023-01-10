@@ -42,6 +42,9 @@
   button[type='submit'] {
     @extend .btn;
     @include text($titleFontFamily, 14px, 40px, 400);
+    @media (max-width: 460px) {
+        padding: 0 25px
+    }
   }
 
 }

@@ -4,29 +4,32 @@
 .infoContainer {
   margin-bottom: 20px;
   flex-direction: row;
-  width: 240px;
   text-align: left;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  @media screen and (max-width: 360px) {
+    justify-content: center;
+  }
 
   h4 {
-
+    @include text($titleFontFamily, 16px, 1.5em, 600);
     color: black;
     margin: 0;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   a, span {
+    @include text($textFontFamily, 16px, 1.75em, 400);
     outline: none;
     cursor: pointer;
     text-decoration: none;
+    color: $thirdColor;
 
-    color: $thirdColor
   }
 
   .icon {
-    border: 1px solid #a8a8a8;
+    border: 1px solid $secondaryColor;
     border-radius: 50%;
     font-size: 24px;
     height: 47px;
@@ -34,11 +37,15 @@
     margin-right: 12px;
     text-align: center;
     width: 47px;
-    color: #919191;
+    color: $bgColorImg;
   }
 
   .description {
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 360px) {
+      padding-top: 5px;
+      text-align: center;
+    }
   }
 }

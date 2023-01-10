@@ -6,7 +6,7 @@
   padding: 100px 20px;
 
   .container {
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -25,7 +25,6 @@
       @include text($textFontFamily, 16px, 1.5em, 600);
       display: block;
       color: $thirdColor;
-      margin-left: 15px;
       margin-bottom: 5px;
       padding-left: 50px;
       position: relative;
@@ -45,18 +44,13 @@
     h2 {
       color: #1e1e22;
       font-family: 'Jost', sans-serif;
-      margin-left: 15px;
       font-weight: 700;
       font-size: 36px;
       line-height: 1.25em;
       text-transform: uppercase;
-
+      @media (max-width: 460px) {
+        font-size: 30px;
+      }
     }
-  }
-}
-
-@media (max-width: 460px) {
-  .contactsBlock {
-    width: 100%;
   }
 }
