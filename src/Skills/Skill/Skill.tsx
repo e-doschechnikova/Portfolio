@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import style from "./Skill.module.scss"
-import {Line} from "../../Components/Line/Line";
+import {Line} from "../../Components/line/Line";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {IconProp} from "@fortawesome/fontawesome-svg-core";
 

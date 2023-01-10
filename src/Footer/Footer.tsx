@@ -1,14 +1,13 @@
 import React from "react";
 import style from "./Footer.module.scss";
-import github from "../Assets/Image/github.png"
-import linkedin from "../Assets/Image/linkedin.png"
-import telegram from "../Assets/Image/telegram.png"
-import styleContainer from "../Common/Styles/Container.module.css";
+import github from "../Assets/image/github.png"
+import linkedin from "../Assets/image/linkedin.png"
+import telegram from "../Assets/image/telegram.png"
 
 export const Footer = () => {
     return (
         <div className={style.footerBlock}>
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
+            <div className={style.footerContainer}>
                 <div>
                     <div className={style.footerSocial}>
                         <span>© 2022 All rights reserved</span>

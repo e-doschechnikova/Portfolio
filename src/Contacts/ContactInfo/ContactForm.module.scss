@@ -1,5 +1,6 @@
 @import "src/Common/Styles/Sass/variables";
 @import "src/Common/Styles/Sass/mixins";
+@import 'src/Components/button/Button.module';
 
 .contactsForm {
   width: 500px;
@@ -35,18 +36,9 @@
     resize: none;
   }
 
-  .sendBtn {
+  button[type='submit'] {
+    @extend .btn;
     @include text($titleFontFamily, 14px, 40px, 400);
-    color: $primaryColor;
-    letter-spacing: normal;
-    background-color: $bgColorSecond;
-    border: 0;
-    border-radius: 0;
-    height: 40px;
-    padding: 0 40px;
-    text-transform: uppercase;
-    transition: all .3s ease 0s;
-    cursor: pointer;
   }
 
   @media (max-width: 460px) {

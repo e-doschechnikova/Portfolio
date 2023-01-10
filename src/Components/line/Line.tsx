@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../Line/Line.module.scss";
+import style from ".//Line.module.scss";
 
 
 export const Line = () => {

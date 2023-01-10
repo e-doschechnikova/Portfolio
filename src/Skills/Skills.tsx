@@ -1,14 +1,13 @@
 import React from "react";
 import style from "./Skills.module.scss"
-import styleContainer from "../Common/Styles/Container.module.css"
 import {Skill} from "./Skill/Skill";
-import {Title} from "../Components/Title/Title";
+import {Title} from "../Components/title/Title";
 import {faLaptopCode, faPalette, faTasks, faUsers} from "@fortawesome/free-solid-svg-icons";
 
 export const Skills = () => {
     return (
         <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+            <div className={style.skillsContainer}>
                 <Title title={"Skills"}/>
                 <div className={style.skills}>
                     <Skill title={"DEVELOPMENT"} description={"JavaScript, TypeScript, React, Redux, SCSS & CSS, Git"}

@@ -1,8 +1,21 @@
 @import "src/Common/Styles/Sass/variables";
 
-@mixin text($fontFamily, $fontSize,$lineHeight, $fontWeight) {
+@mixin text($fontFamily, $fontSize, $lineHeight, $fontWeight) {
   font-family: $fontFamily;
   font-size: $fontSize;
   line-height: $lineHeight;
   font-weight: $fontWeight;
+}
+
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin flex($justifyContent, $alignItems, $flexDirection, $wrap) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+  flex-wrap: $wrap;
 }

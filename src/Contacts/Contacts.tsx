@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./Contacts.module.scss"
 import {ContactInfo} from "./ContactInfo/ContactInfo";
-import {faTelegramPlane} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import {ContactForm} from "./ContactInfo/ContactForm";
 

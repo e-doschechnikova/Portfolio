@@ -1,10 +1,12 @@
 @import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
 
 .skillsBlock {
   background-color: $fourthColor;
   padding: 100px 0;
 
   .skillsContainer {
+    @include container();
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 import style from "./Project.module.scss"
-import {Line} from "../../Components/Line/Line";
+import {Line} from "../../Components/line/Line";
 
 
 type ProjectType = {
