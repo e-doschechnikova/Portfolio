@@ -6,6 +6,10 @@
   width: 500px;
   text-align: center;
 
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
   .inputForm {
     display: flex;
     justify-content: space-around;
@@ -30,7 +34,6 @@
     border: none;
     border-bottom: 1px solid $secondaryColor;
     margin: 40px 0 20px;
-    padding: 11px;
     width: 99%;
     height: 100px;
     resize: none;
@@ -41,9 +44,4 @@
     @include text($titleFontFamily, 14px, 40px, 400);
   }
 
-  @media (max-width: 460px) {
-    .contactsForm {
-      width: 100%;
-    }
-  }
 }

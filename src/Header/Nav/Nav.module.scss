@@ -6,14 +6,18 @@
   display: flex;
   justify-content: space-between;
 
+
   a {
     @include text($titleFontFamily, 14px, 40px, 650);
-    color: $bgColorSecond;
+    color: $primaryColor;
     letter-spacing: .4px;
     text-decoration: none;
-    padding: 0 5px;
     text-transform: uppercase;
     position: relative;
     cursor: pointer;
+    @media screen and (max-width: 280px) {
+      font-size: 10px;
+      //    display: none //доработать
+    }
   }
 }

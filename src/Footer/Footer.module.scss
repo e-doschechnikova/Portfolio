@@ -2,47 +2,33 @@
 @import "src/Common/Styles/Sass/mixins";
 
 .footerBlock {
-  background-color: $fourthColor;
+  background-color: $bgColorSecond;
   display: block;
-  padding-top: 25px;
+  padding: 15px 0;
 
   .footerContainer {
     @include container();
-    display: block;
-
-    p {
-      font-size: 25px;
-      text-align: center;
-
-    }
 
     .footerSocial {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
 
-      span {
+      a, p {
         @include text($titleFontFamily, 14px, 40px, 650);
+        color: $primaryColor;
         letter-spacing: .4px;
         text-decoration: none;
         padding: 0 5px;
         text-transform: uppercase;
-        color: $bgColorSecond;
-      }
-
-      img {
-        width: 30px;
-        height: 30px;
+        position: relative;
+        cursor: pointer;
       }
     }
 
-    .bottomText {
-      margin-top: 5px;
-      text-align: center;
-      font-size: 20px;
-    }
   }
 }
+
 
 
 

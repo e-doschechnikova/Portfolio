@@ -8,8 +8,6 @@ export const ContactForm = () => {
             <input type="text" placeholder={'E-mail'}/>
         </div>
         <textarea placeholder={'Message'}/>
-        <div>
-            <button type={'submit'} className={style.sendBtn}>Send message</button>
-        </div>
+        <button type={'submit'} className={style.sendBtn}>Send message</button>
     </form>
 }
