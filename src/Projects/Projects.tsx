@@ -4,6 +4,7 @@ import {Project} from "./Project/Project";
 import {Title} from "../Components/title/Title";
 import socialImage from "../Assets/image/socialnetwork.avif"
 import todoImage from "../Assets/image/todolist.avif"
+import {Fade} from "react-awesome-reveal";
 
 export const Projects = () => {
     const social = {
@@ -15,12 +16,18 @@ export const Projects = () => {
     return (
         <div className={style.projectsBlock}>
             <div className={style.projectsContainer}>
+
                 <Title title={"My project"}/>
-                <div className={style.projects}>
-                    <Project title={"SOCIAL NETWORK"} description={"PROJECT DESCRIPTION"} styles={social}/>
-                    <Project title={"TODO LIST"} description={"PROJECT DESCRIPTION"} styles={todolist}/>
-                    <Project title={"PROJECT NAME"} description={"PROJECT DESCRIPTION"} styles={social}/>
-                </div>
+                <Fade delay={1e3} cascade triggerOnce={true} direction={"up"}>
+                    <div className={style.projects}>
+                        <Project title={"SOCIAL NETWORK"} description={"PROJECT DESCRIPTION"} styles={social}/>
+                        <Project title={"TODO LIST"} description={"PROJECT DESCRIPTION"} styles={todolist}/>
+                        <Project title={"LEARN CARDS"} description={"PROJECT DESCRIPTION"} styles={social}/>
+                        <Project title={"ROYALTY"} description={"..."} styles={social}/>
+                        <Project title={"FUTURE PROJECT"} description={"...in progress"} styles={todolist}/>
+                        <Project title={"FUTURE PROJECT"} description={"...in progress"} styles={social}/>
+                    </div>
+                </Fade>
             </div>
         </div>
     );

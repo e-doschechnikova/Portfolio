@@ -1,0 +1,13 @@
+@import "src/Common/Styles/Sass/variables";
+@import "src/Common/Styles/Sass/mixins";
+
+.runningLineBlock {
+  @include text($titleFontFamily, 1px, 1px, 700);
+  color: grey;
+  min-height: 20vh;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px $bgColorSecond;
+  white-space: nowrap;
+}
