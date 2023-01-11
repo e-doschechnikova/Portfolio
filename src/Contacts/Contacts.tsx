@@ -6,7 +6,7 @@ import {ContactForm} from "./ContactInfo/ContactForm";
 
 export const Contacts = () => {
     return (
-        <div className={style.contactsBlock}>
+        <div id={"contacts"} className={style.contactsBlock}>
             <div className={style.container}>
                 <div>
                     <ContactInfo iconTitle={faEnvelope} contactTitle={"Email"} data={"e.doschechnikova@gmail.com"}

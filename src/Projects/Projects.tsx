@@ -14,11 +14,11 @@ export const Projects = () => {
         backgroundImage: `url(${todoImage})`
     }
     return (
-        <div className={style.projectsBlock}>
+        <div id={"projects"} className={style.projectsBlock}>
             <div className={style.projectsContainer}>
 
                 <Title title={"My project"}/>
-                <Fade delay={1e3} cascade triggerOnce={true} direction={"up"}>
+                <Fade delay={1e1} cascade triggerOnce={true} direction={"up"}>
                     <div className={style.projects}>
                         <Project title={"SOCIAL NETWORK"} description={"PROJECT DESCRIPTION"} styles={social}/>
                         <Project title={"TODO LIST"} description={"PROJECT DESCRIPTION"} styles={todolist}/>

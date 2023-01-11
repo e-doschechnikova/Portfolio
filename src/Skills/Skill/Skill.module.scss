@@ -25,14 +25,21 @@
       font-size: 35px;
       color: $secondaryColor;
       margin-bottom: 5px;
+
     }
   }
 
   .description {
     @include text($textFontFamily, 16px, 1.75em, 400);
-    background-color: $bgColorSecond;
     color: $thirdColor;
     margin: 0 0 15px;
+  }
+  &:hover {
+    background-color: $secondaryColor;
+    .projectTitle, .icon, .description {
+      color: $primaryColor;
+    }
+
   }
 }
 

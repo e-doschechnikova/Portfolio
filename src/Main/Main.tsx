@@ -4,7 +4,7 @@ import mainPhoto from "../Assets/image/mainPhoto.jpg"
 import {Fade} from "react-awesome-reveal";
 
 export const Main = () => {
-    return <div className={style.mainBlock}>
+    return <div id={"main"} className={style.mainBlock}>
         <div className={style.container}>
             <Fade delay={1e3} cascade triggerOnce={true}>
                 <div className={style.aboutMe}>

@@ -4,7 +4,6 @@
 .footerBlock {
   background-color: $bgColorSecond;
   display: block;
-  padding: 15px 0;
 
   .footerContainer {
     @include container();

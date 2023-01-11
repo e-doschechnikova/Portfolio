@@ -42,6 +42,10 @@
       letter-spacing: normal;
       position: relative;
       z-index: 1;
+      &:hover {
+        background-color: $textColor;
+        border: none;
+      }
     }
   }
 

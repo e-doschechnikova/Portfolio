@@ -19,5 +19,9 @@
       font-size: 10px;
       //    display: none //доработать
     }
+    &:hover {
+      color: $textColor;
+      font-weight: 700;
+    }
   }
 }
