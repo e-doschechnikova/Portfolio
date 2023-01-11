@@ -6,22 +6,44 @@
   display: flex;
   justify-content: space-between;
 
-
   a {
-    @include text($titleFontFamily, 14px, 40px, 650);
+    @include text($titleFontFamily, 14px, 1.2em, 650);
     color: $primaryColor;
     letter-spacing: .4px;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
     cursor: pointer;
-    @media screen and (max-width: 280px) {
-      font-size: 10px;
-      //    display: none //доработать
+
+    &::after {
+      width: 0;
+      background: $secondaryColor none repeat scroll 0 0;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      top: 95%;
+      transform: translate(-0, -50%);
+      transition: all .3s ease-in-out;
     }
+
     &:hover {
       color: $textColor;
       font-weight: 700;
+
+      &::after {
+        width: 100%;
+      }
     }
+  }
+
+  .active {
+    @include text($titleFontFamily, 14px, 40px, 400);
+
+  }
+
+  @media screen and (max-width: 400px) {
+    display: none;
+
   }
 }
