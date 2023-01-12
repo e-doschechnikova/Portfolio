@@ -4,11 +4,13 @@
 
 .workBlock {
   background-color: $fourthColor;
-
+  box-sizing: border-box;
   .workContainer {
     @include container();
     display: flex;
+    flex-direction: column;
     justify-content: center;
+
 
     .work {
       @include text($textFontFamily, 36px, 40px, 650);

@@ -1,6 +1,5 @@
 import React, {FC} from "react";
 import style from "./Project.module.scss"
-import {Line} from "../../Components/line/Line";
 import {Fade} from "react-awesome-reveal";
 
 type ProjectType = {
