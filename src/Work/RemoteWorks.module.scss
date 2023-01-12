@@ -5,6 +5,7 @@
 .workBlock {
   background-color: $fourthColor;
   box-sizing: border-box;
+  margin-top: 80px;
   .workContainer {
     @include container();
     display: flex;
