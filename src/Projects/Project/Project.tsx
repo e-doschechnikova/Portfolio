@@ -1,26 +1,30 @@
 import React, {FC} from "react";
 import style from "./Project.module.scss"
 import {Line} from "../../Components/line/Line";
-
+import {Fade} from "react-awesome-reveal";
 
 type ProjectType = {
     styles: { backgroundImage: string }
     title: string
-    description: string
+    description: string,
+    link: string
 }
-export const Project: FC<ProjectType> = ({styles, title, description}) => {
+export const Project: FC<ProjectType> = ({styles, title, description, link}) => {
     return (
-        <div className={style.project}>
-            <div className={style.projectImage} style={styles}>
-                <a href={"#"} className={style.projectBtn}>see
-                    more</a>
+        <Fade delay={1e1} cascade triggerOnce={true} direction={"up"}>
+            <div className={style.project}>
+                <div className={style.projectImage} style={styles}>
+                    <div className={style.overlay}>
+                        <div className={style.description}>
+                            <h3>{title}</h3>
+                            <p>{description}</p>
+                            <a href={link} className={style.projectBtn} target={"_blank"}>see
+                                more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className={style.projectInfo}>
-                <h3 className={style.projectTitle}>{title}</h3>
-                <Line/>
-                <span className={style.projectDescription}>{description}</span>
-            </div>
-        </div>
+        </Fade>
     );
 };
 
