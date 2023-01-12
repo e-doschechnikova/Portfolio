@@ -7,14 +7,14 @@ export const Main = () => {
     return <div id={"main"} className={style.mainBlock}>
         <div className={style.container}>
             <Fade delay={1e3} cascade triggerOnce={true}>
-                <div className={style.aboutMe}>
-                    <h6 className={style.subheadingTitle}>About me</h6>
-                    <h2 className={style.headingTitle}>Evgeniia Doschechnikova</h2>
-                    <p>HELLO, I AM FRONT-END DEVELOPER BASED IN
-                        ST. PETERSBURG</p>
+                <div className={style.greeting}>
+                    <p className={style.subheadingTitle}>About me</p>
+                    <h1>Evgeniia Doschechnikova</h1>
+                    <h5>HELLO, I AM FRONT-END DEVELOPER BASED IN
+                        ST. PETERSBURG</h5>
                 </div>
                 <div className={style.photo}>
-                    <img src={mainPhoto} alt={"img"}/>
+                    <img src={mainPhoto} alt={"it`s me"}/>
                 </div>
             </Fade>
         </div>

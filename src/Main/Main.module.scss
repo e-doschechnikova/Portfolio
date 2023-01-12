@@ -2,16 +2,41 @@
 @import "src/Common/Styles/Sass/mixins";
 
 .mainBlock {
+  @include flex(space-between, center, column, nowrap);
   background-color: $bgColorMain;
-  padding:150px 0;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  @media (max-width: 460px) {
+    padding-top: 80px;
+  }
 
   .container {
     @include container();
     @include flex(space-around, center, row, wrap);
 
-    .aboutMe {
+    .greeting {
       width: 500px;
       text-align: left;
+
+      h1 {
+        color: $textColor;
+        @include text($titleFontFamily, 36px, 1.25em, 600);
+        text-transform: uppercase;
+        @media (max-width: 460px) {
+          text-align: center;
+          font-size: 20px;
+        }
+      }
+
+      h5 {
+        @include text($textFontFamily, 16px, 1.75em, 400);
+        color: $thirdColor;
+        margin: 0 0 15px;
+        @media (max-width: 460px) {
+          text-align: center;
+          font-size: 11px;
+        }
+      }
 
       .subheadingTitle {
         display: block;
@@ -31,40 +56,25 @@
           left: 0;
           bottom: 45%;
         }
-      }
-
-      .headingTitle {
-        color: $textColor;
-        @include text($titleFontFamily, 36px, 1.25em, 600);
-        margin-bottom: 30px;
-        text-transform: uppercase;
         @media (max-width: 460px) {
-          text-align: center;
-          font-size: 25px;
-        }
-      }
-
-      p {
-        @include text($textFontFamily, 16px, 1.75em, 400);
-        color: $thirdColor;
-        margin: 0 0 15px;
-        @media (max-width: 460px) {
-          text-align: center;
-          font-size: 15px;
+       display: none;
         }
       }
     }
 
     .photo {
+      display: flex;
+      flex-direction: column;
       width: 500px;
 
       img {
-        height: auto;
+
         width: 100%;
         max-width: 720px;
-        //@media (max-width: 460px) {
-        //  width: 90%;
-        //}
+        @media (max-width: 360px) {
+          padding: 0 124px;
+          width: 50%;
+        }
       }
     }
   }
