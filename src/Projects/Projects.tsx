@@ -53,9 +53,6 @@ export const Projects = () => {
                              description={"It was a command work. App for learning some cards"} styles={cards}/>
                     <Project link={"https://github.com/e-doschechnikova/Test-counter"} title={"COUNTER"}
                              description={"React/Redux/TS"} styles={counter}/>
-
-
-
                 </div>
             </div>
         </div>
