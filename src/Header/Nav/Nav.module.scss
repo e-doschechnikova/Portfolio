@@ -39,11 +39,9 @@
 
   .active {
     @include text($titleFontFamily, 14px, 40px, 400);
-
   }
 
   @media screen and (max-width: 400px) {
     display: none;
-
   }
 }

@@ -42,7 +42,6 @@
 
     .active {
       @include text($titleFontFamily, 14px, 40px, 400);
-
     }
   }
 
@@ -55,7 +54,6 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    //background-color: $textColor;
     position: absolute;
     top: 24px;
     right: 10px;

@@ -17,7 +17,7 @@ export const Project: FC<ProjectType> = ({styles, title, description, link}) => 
                         <div className={style.description}>
                             <h3>{title}</h3>
                             <p>{description}</p>
-                            <a href={link} className={style.projectBtn} target={"_blank"}>see
+                            <a href={link} className={style.projectBtn} target={"_blank"} rel="noreferrer">see
                                 more</a>
                         </div>
                     </div>
