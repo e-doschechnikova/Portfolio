@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./ContactForm.module.scss";
 import {useFormik} from "formik";
+import {api} from "../../api/api";
 
 export type FormType = {
     name?: string
@@ -38,7 +39,7 @@ export const ContactForm = () => {
         },
         validateOnBlur: false,
         onSubmit: (values, {resetForm}) => {
-            // api.sendEmail(values)
+            api.sendEmail(values)
             resetForm()
         }
     });

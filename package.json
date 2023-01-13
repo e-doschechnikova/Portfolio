@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://e-doschechnikova.github.io/Portfolio",
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
@@ -18,6 +19,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/react-scroll": "^1.8.5",
+    "emailjs": "^4.0.1",
     "formik": "^2.2.9",
     "gh-pages": "^4.0.0",
     "node-sass": "^8.0.0",
@@ -28,6 +30,7 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "5.0.1",
     "react-scrollspy": "^3.4.3",
+    "react-toastify": "^9.1.1",
     "sass": "^1.56.1",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
