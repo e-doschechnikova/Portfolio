@@ -1,12 +1,14 @@
-import React from 'react';
-import style from './Button.module.scss'
+import React from "react";
+import style from "./Button.module.scss";
 
-export const Button = ({text}: ButtonPropsType) => {
-    return (
-        <a href={""} className={style.btn}>{text}</a>
-    );
+export const Button = ({ text }: ButtonPropsType) => {
+  return (
+    <a href={""} className={style.btn}>
+      {text}
+    </a>
+  );
 };
 
 type ButtonPropsType = {
-    text: string
-}
+  text: string;
+};
