@@ -7,18 +7,21 @@ export const BurgerNav = () => {
     const [menuActive, setMenuActive] = useState(false)
     const onButtonClick = () => {
         setMenuActive(!menuActive)
-        console.log(menuActive)
     }
 
     return (
         <div className={style.burgerNav}>
             <div className={menuActive ? `${style.burgerNavItems} ${style.show}` : style.burgerNavItems}>
-                <a href="#main">Home</a>
-                <a href="#skills">Skills</a>
-                <a href='#projects'>Projects</a>
-                <a href="#contacts">Contacts</a>
+                <a href="#main" onClick={onButtonClick}>Home</a>
+                <a href="#skills" onClick={onButtonClick}>Skills</a>
+                <a href='#projects' onClick={onButtonClick}>Projects</a>
+                <a href="#contacts" onClick={onButtonClick}>Contacts</a>
             </div>
-            <div onClick={onButtonClick} className={style.burgerButton}><FontAwesomeIcon icon={faBars} style={{width:"25px",  height: "25px", color: "#fff"}}/></div>
+            <div onClick={onButtonClick} className={style.burgerButton}><FontAwesomeIcon icon={faBars} style={{
+                width: "25px",
+                height: "25px",
+                color: "#fff"
+            }}/></div>
         </div>
     );
 };
