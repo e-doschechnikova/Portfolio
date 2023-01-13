@@ -37,22 +37,25 @@ export const Projects = () => {
             <div className={style.projectsContainer}>
                 <Title title={"My project"}/>
                 <div className={style.projects}>
-                    <Project link={"https://github.com/e-doschechnikova/Todo-List-TS"} title={"TODO LIST"}
-                             description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"} styles={todolist}/>
-                    <Project link={"https://github.com/e-doschechnikova/React-Social-Network-TS"}
-                             title={"SOCIAL NETWORK"} description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"}
-                             styles={social}/>
-                    <Project link={""} title={"LEARN CARDS"}
-                             description={"It was a command work. App for learning some cards"} styles={cards}/>
-                    <Project link={"https://github.com/e-doschechnikova/Test-counter"} title={"COUNTER"}
-                             description={"React/Redux/TS"} styles={counter}/>
-                    <Project link={"https://github.com/e-doschechnikova/Royalty"} title={"ROYALTY"}
-                             description={"HTML/CSS/JS"} styles={royalty}/>
-                    <Project link={"https://e-doschechnikova.github.io/Homework-Ignat"} title={"COMPONENTS"}
-                             description={"React/TS/CSS"} styles={components}/>
                     <Project link={"https://github.com/e-doschechnikova/50LittleProjects"}
                              title={"50 LITTLE PROJECT"}
                              description={"HTML/CSS/JS"} styles={projects}/>
+                    <Project link={"https://github.com/e-doschechnikova/React-Social-Network-TS"}
+                             title={"SOCIAL NETWORK"} description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"}
+                             styles={social}/>
+                    <Project link={"https://github.com/e-doschechnikova/Royalty"} title={"ROYALTY"}
+                             description={"HTML/CSS/JS"} styles={royalty}/>
+                    <Project link={"https://github.com/e-doschechnikova/Todo-List-TS"} title={"TODO LIST"}
+                             description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"} styles={todolist}/>
+                    <Project link={"https://github.com/e-doschechnikova/Homework-Ignat"} title={"COMPONENTS"}
+                             description={"React/TS/CSS"} styles={components}/>
+                    <Project link={"https://github.com/JuliOgogo/friday-project"} title={"LEARN CARDS"}
+                             description={"It was a command work. App for learning some cards"} styles={cards}/>
+                    <Project link={"https://github.com/e-doschechnikova/Test-counter"} title={"COUNTER"}
+                             description={"React/Redux/TS"} styles={counter}/>
+
+
+
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@
   display: inline-block;
 
   .projectImage {
-    height: 250px;
+    height: 100%;
     background-color: $bgColorImg;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
 
       .description {
         text-align: center;
-        padding: 15px;
+        padding: 60px;
 
         h3 {
           @include text($titleFontFamily, 24px, 1.75em, 650);
