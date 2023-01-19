@@ -9,6 +9,7 @@ import counterImage from "../Assets/img/counter.jpg";
 import royaltyImage from "../Assets/img/royalty.jpg";
 import projectImage from "../Assets/img/50project.jpg";
 import componentsImage from "../Assets/img/components.jpg";
+import tableImage from "../Assets/img/table.jpg";
 
 export const Projects = () => {
   const social = {
@@ -32,11 +33,33 @@ export const Projects = () => {
   const components = {
     backgroundImage: `url(${componentsImage})`,
   };
+  const table = {
+    backgroundImage: `url(${tableImage})`,
+  };
+
   return (
     <div id={"projects"} className={style.projectsBlock}>
       <div className={style.projectsContainer}>
         <Title title={"My project"} />
         <div className={style.projects}>
+          <Project
+            link={"https://github.com/JuliOgogo/friday-project"}
+            title={"LEARN CARDS"}
+            description={"It was a command work. App for learning some cards"}
+            styles={cards}
+          />
+          <Project
+            link={"https://github.com/e-doschechnikova/Product-Table"}
+            title={"PRODUCT TABLE"}
+            description={"React/Redux/TS/ANT DESIGN"}
+            styles={table}
+          />
+          <Project
+            link={"https://github.com/e-doschechnikova/Test-counter"}
+            title={"COUNTER"}
+            description={"React/Redux/TS"}
+            styles={counter}
+          />
           <Project
             link={"https://github.com/e-doschechnikova/50LittleProjects"}
             title={"50 LITTLE PROJECT"}
@@ -61,23 +84,12 @@ export const Projects = () => {
             description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"}
             styles={todolist}
           />
+
           <Project
             link={"https://github.com/e-doschechnikova/Homework-Ignat"}
             title={"COMPONENTS"}
             description={"React/TS/CSS"}
             styles={components}
-          />
-          <Project
-            link={"https://github.com/JuliOgogo/friday-project"}
-            title={"LEARN CARDS"}
-            description={"It was a command work. App for learning some cards"}
-            styles={cards}
-          />
-          <Project
-            link={"https://github.com/e-doschechnikova/Test-counter"}
-            title={"COUNTER"}
-            description={"React/Redux/TS"}
-            styles={counter}
           />
         </div>
       </div>

@@ -12,7 +12,7 @@ export const Contacts = () => {
           <ContactInfo
             iconTitle={faEnvelope}
             contactTitle={"Email"}
-            data={"e.doschechnikova@gmail.com"}
+            data={"evadrobakova@gmail.com"}
             link={""}
           />
           <ContactInfo
