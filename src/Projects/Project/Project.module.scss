@@ -23,9 +23,9 @@
       align-items: center;
       background-color: $bgColorImg;
       opacity: 0;
-      -webkit-transition: opacity .25s ease-in-out;
-      -o-transition: opacity .25s ease-in-out;
-      transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity 0.25s ease-in-out;
+      -o-transition: opacity 0.25s ease-in-out;
+      transition: opacity 0.25s ease-in-out;
 
       &:hover {
         opacity: 1;
@@ -39,16 +39,14 @@
           @include text($titleFontFamily, 24px, 1.75em, 650);
           color: $primaryColor;
           text-transform: uppercase;
-          letter-spacing: .4px;
+          letter-spacing: 0.4px;
         }
 
         p {
           @include text($textFontFamily, 14px, 1.75em, 300);
           color: $primaryColor;
           text-transform: uppercase;
-
         }
-
       }
 
       .projectBtn {
@@ -77,9 +75,9 @@
       .projectTitle {
         @include text($titleFontFamily, 24px, 26px, 650);
         background-color: $secondaryColor;
-        letter-spacing: .4px;
+        letter-spacing: 0.4px;
         text-transform: uppercase;
-        color: $primaryColor
+        color: $primaryColor;
       }
 
       .projectDescription {

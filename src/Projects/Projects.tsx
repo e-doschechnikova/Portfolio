@@ -2,14 +2,16 @@ import React from "react";
 import style from "./Projects.module.scss";
 import { Project } from "./Project/Project";
 import { Title } from "../Components/title/Title";
-import socialImage from "../Assets/img/socialnetwork.jpg";
-import todoImage from "../Assets/img/todo.jpg";
-import cardsImage from "../Assets/img/cards.jpg";
-import counterImage from "../Assets/img/counter.jpg";
-import royaltyImage from "../Assets/img/royalty.jpg";
-import projectImage from "../Assets/img/50project.jpg";
-import componentsImage from "../Assets/img/components.jpg";
-import tableImage from "../Assets/img/table.jpg";
+import socialImage from "../Assets/Img/socialnetwork.jpg";
+import todoImage from "../Assets/Img/todo.jpg";
+import cardsImage from "../Assets/Img/cards.jpg";
+import counterImage from "../Assets/Img/counter.jpg";
+import royaltyImage from "../Assets/Img/royalty.jpg";
+import projectImage from "../Assets/Img/50project.jpg";
+import componentsImage from "../Assets/Img/components.jpg";
+import tableImage from "../Assets/Img/table.jpg";
+import minesweeperImage from "../Assets/Img/minesweeper.jpg";
+import calculatorImage from "../Assets/Img/calculator.jpg";
 
 export const Projects = () => {
   const social = {
@@ -36,12 +38,36 @@ export const Projects = () => {
   const table = {
     backgroundImage: `url(${tableImage})`,
   };
+  const minesweeper = {
+    backgroundImage: `url(${minesweeperImage})`,
+  };
+  const calculator = {
+    backgroundImage: `url(${calculatorImage})`,
+  };
 
   return (
     <div id={"projects"} className={style.projectsBlock}>
       <div className={style.projectsContainer}>
         <Title title={"My project"} />
         <div className={style.projects}>
+          <Project
+            link={"https://github.com/e-doschechnikova/Sweeper-Game"}
+            title={"MINESWEEPER GAME"}
+            description={"TS/React/SCSS"}
+            styles={minesweeper}
+          />
+          <Project
+            link={"https://github.com/e-doschechnikova/Todo-List-TS"}
+            title={"TODO LIST"}
+            description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"}
+            styles={todolist}
+          />
+          <Project
+            link={"https://github.com/e-doschechnikova/Calculator-app"}
+            title={"iPhone CALCULATOR"}
+            description={"TS/React/SCSS"}
+            styles={calculator}
+          />
           <Project
             link={"https://github.com/JuliOgogo/friday-project"}
             title={"LEARN CARDS"}
@@ -53,6 +79,12 @@ export const Projects = () => {
             title={"PRODUCT TABLE"}
             description={"React/Redux/TS/ANT DESIGN"}
             styles={table}
+          />
+          <Project
+            link={"https://github.com/e-doschechnikova/React-Social-Network-TS"}
+            title={"SOCIAL NETWORK"}
+            description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"}
+            styles={social}
           />
           <Project
             link={"https://github.com/e-doschechnikova/Test-counter"}
@@ -67,24 +99,11 @@ export const Projects = () => {
             styles={projects}
           />
           <Project
-            link={"https://github.com/e-doschechnikova/React-Social-Network-TS"}
-            title={"SOCIAL NETWORK"}
-            description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"}
-            styles={social}
-          />
-          <Project
             link={"https://github.com/e-doschechnikova/Royalty"}
             title={"ROYALTY"}
             description={"HTML/CSS/JS"}
             styles={royalty}
           />
-          <Project
-            link={"https://github.com/e-doschechnikova/Todo-List-TS"}
-            title={"TODO LIST"}
-            description={"TS/Redux/RestAPI/Thunk/Material UI/Unit Tests"}
-            styles={todolist}
-          />
-
           <Project
             link={"https://github.com/e-doschechnikova/Homework-Ignat"}
             title={"COMPONENTS"}

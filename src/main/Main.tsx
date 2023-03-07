@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./Main.module.scss";
-import mainPhoto from "../Assets/img/mainPhoto.jpg";
+import mainPhoto from "../Assets/Img/mainPhoto.jpg";
 import { Fade } from "react-awesome-reveal";
 //@ts-ignore
-import CV from "../Assets/docs/CV.pdf";
+import CV from "../Assets/Docs/CV.pdf";
 
 export const Main = () => {
   return (
@@ -26,4 +26,3 @@ export const Main = () => {
     </div>
   );
 };
-

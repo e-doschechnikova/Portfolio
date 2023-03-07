@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./ContactForm.module.scss";
 import { useFormik } from "formik";
-import { api } from "../../api/api";
+import { api } from "../../API/api";
 
 export type FormType = {
   name?: string;
